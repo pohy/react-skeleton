@@ -12,7 +12,7 @@ const store = createStore(reducers);
 import {Router, browserHistory, hashHistory} from 'react-router';
 import routes from '../common/routes';
 
-import App from './App.react.js';
+import App from './app/App.react.js';
 
 ReactDOM.render(
     <Provider store={store}>

@@ -3,13 +3,14 @@
  */
 import React, {Component} from 'react';
 
-import Home from './home/Page.react';
+import Navigation from './Navigation.react';
 
 export default class App extends Component {
     render() {
         return (
             <div>
-                <h1>Index page</h1>
+                <h1>Image board</h1>
+                <Navigation/>
                 <hr/>
                 {this.props.children}
             </div>

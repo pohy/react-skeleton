@@ -6,7 +6,7 @@ import React, {Component} from 'react';
 export default class  extends Component {
     render() {
         return (
-            <h1>yaay, redux</h1>
+            <h4>yaay, redux</h4>
         );
     }
 }
