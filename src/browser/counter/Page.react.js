@@ -2,28 +2,18 @@
  * Created by David Pohan <david.pohan@keyup.eu> on 3/9/2016.
  */
 import React, {PropTypes, Component} from 'react';
-import {connect} from 'react-redux';
-import * as counterActions from '../../common/counter/actions';
+import Helmet from 'react-helmet';
 
-class Page extends Component {
-    static propTypes = {
-        clickCount: PropTypes.number.isRequired,
-        increaseClickCount: PropTypes.func.isRequired
-    };
+import Counter from './Counter.react';
 
+export default class Page extends Component {
     render() {
-        const {clickCount, increaseClickCount} = this.props;
-
         return (
             <div>
+                <Helmet title="Click counter"/>
                 <h4>Click counter</h4>
-                <p>Click count: {clickCount}</p>
-                <button onClick={increaseClickCount}>Click me!</button>
+                <Counter/>
             </div>
         );
     }
 }
-
-export default connect(state => ({
-    clickCount: state.counter.clickCount
-}), counterActions)(Counter)
