@@ -9,14 +9,14 @@ import configureStore from './../common/configureStore';
 import {Provider} from 'react-redux';
 const store = configureStore();
 
-import {Router, browserHistory, hashHistory} from 'react-router';
+import {Router, browserHistory} from 'react-router';
 import routes from '../common/app/routes';
 
 import App from './app/App.react.js';
 
 ReactDOM.render(
     <Provider store={store}>
-        <Router history={hashHistory}>
+        <Router history={browserHistory}>
             {routes}
         </Router>
     </Provider>,
