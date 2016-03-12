@@ -18,6 +18,9 @@ export default function(state = initialState, action) {
         case counterActions.INCREASE_CLICK_COUNT: {
             return state.update(CLICK_COUNT, count => count + 1);
         }
+        case counterActions.RESET_CLICK_COUNT: {
+            return state.set(CLICK_COUNT, 0);
+        }
     }
 
     return state;

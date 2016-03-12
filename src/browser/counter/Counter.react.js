@@ -8,16 +8,18 @@ import * as counterActions from '../../common/counter/actions';
 class Page extends Component {
     static propTypes = {
         clickCount: PropTypes.number.isRequired,
-        increaseClickCount: PropTypes.func.isRequired
+        increaseClickCount: PropTypes.func.isRequired,
+        resetClickCount: PropTypes.func.isRequired
     };
 
     render() {
-        const {clickCount, increaseClickCount} = this.props;
+        const {clickCount, increaseClickCount, resetClickCount} = this.props;
 
         return (
             <div>
                 <p>Click count: {clickCount}</p>
                 <button onClick={increaseClickCount}>Click me!</button>
+                <button onClick={resetClickCount}>Reset</button>
             </div>
         );
     }
