@@ -4,7 +4,7 @@
 import React, {PropTypes, Component} from 'react';
 
 
-export default class About extends Component {
+export default class Page extends Component {
     render() {
         return (
             <div>

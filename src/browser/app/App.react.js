@@ -1,7 +1,8 @@
 /**
  * Created by David Pohan <david.pohan@keyup.eu> on 3/8/2016.
  */
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
+import {connect} from 'react-redux';
 
 import Navigation from './Navigation.react';
 

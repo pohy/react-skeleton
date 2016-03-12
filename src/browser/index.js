@@ -4,13 +4,13 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import reducers from '../common/reducers';
+import reducers from '../common/app/reducer';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 const store = createStore(reducers);
 
 import {Router, browserHistory, hashHistory} from 'react-router';
-import routes from '../common/routes';
+import routes from '../common/app/routes';
 
 import App from './app/App.react.js';
 
