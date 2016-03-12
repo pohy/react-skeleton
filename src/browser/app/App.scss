@@ -1,0 +1,18 @@
+@import '~normalize.css/normalize.css';
+
+#app {
+  margin: 0 1em;
+
+  a {
+    padding: .1em;
+    color: dodgerblue;;
+    text-decoration: none;
+  }
+  a:active, a.active {
+    text-decoration: underline;
+  }
+  a:hover {
+    color: white;
+    background-color: dodgerblue;
+  }
+}

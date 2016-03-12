@@ -8,11 +8,11 @@ export default class Navigation extends Component {
     render() {
         return (
             <div>
-                <Link to="/">Home</Link>
+                <Link activeClassName="active" onlyActiveOnIndex to="/">Home</Link>
                 &nbsp;|&nbsp;
-                <Link to="/counter">Counter</Link>
+                <Link activeClassName="active" to="/counter">Counter</Link>
                 &nbsp;|&nbsp;
-                <Link to="/about">About</Link>
+                <Link activeClassName="active" to="/about">About</Link>
             </div>
         );
     }
