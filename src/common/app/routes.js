@@ -2,6 +2,7 @@
  * Created by David Pohan <david.pohan@keyup.eu> on 3/8/2016.
  */
 import React from 'react';
+import Component from 'react-pure-render/component';
 import {Route, IndexRoute} from 'react-router';
 
 import App from '../../browser/app/App.react.js';

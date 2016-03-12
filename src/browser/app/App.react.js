@@ -2,7 +2,8 @@
  * Created by David Pohan <david.pohan@keyup.eu> on 3/8/2016.
  */
 import './App.scss';
-import React, {Component, PropTypes} from 'react';
+import React, {PropTypes} from 'react';
+import Component from 'react-pure-render/component';
 import Helmet from 'react-helmet';
 import {connect} from 'react-redux';
 
