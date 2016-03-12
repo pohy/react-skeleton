@@ -21,7 +21,7 @@ export default function(state = initialState, action) {
         case counterActions.RESET_CLICK_COUNT: {
             return state.set(CLICK_COUNT, 0);
         }
+        default:
+            return state;
     }
-
-    return state;
 }

@@ -28,4 +28,4 @@ class Page extends Component {
 
 export default connect(state => ({
     clickCount: state.counter.clickCount
-}), counterActions)(Page)
+}), counterActions)(Page);

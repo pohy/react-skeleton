@@ -1,10 +1,10 @@
 /**
  * Created by David Pohan <david.pohan@keyup.eu> on 3/8/2016.
  */
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
-var basePath = '..';
+const basePath = '..';
 
 module.exports = {
     entry: [
@@ -29,19 +29,6 @@ module.exports = {
                     presets: ['es2015', 'react', 'stage-0'],
                     env: {
                         development: {
-                            //plugins: ['react-transform'],
-                            //extra: {
-                            //    'react-transform': {
-                            //        transforms: [{
-                            //            transform: 'react-transform-hmr',
-                            //            imports: ['react'],
-                            //            locals: ['module']
-                            //        }, {
-                            //            transform: 'react-transform-catch-errors',
-                            //            imports: ['react', 'redbox-react']
-                            //        }]
-                            //    }
-                            //}
                             presets: ['react-hmre']
                         }
                     }

@@ -5,11 +5,10 @@ import './App.scss';
 import React, {PropTypes} from 'react';
 import Component from 'react-pure-render/component';
 import Helmet from 'react-helmet';
-import {connect} from 'react-redux';
 
 import Navigation from './Navigation.react';
 
-export default class App extends Component {
+class App extends Component {
     static propTypes = {
         children: PropTypes.object.isRequired
     };
@@ -21,13 +20,15 @@ export default class App extends Component {
             <div>
                 {/* TODO: add meta */}
                 <Helmet
-                    titleTemplate="%s - Party Tube"
+                  titleTemplate="%s - Party Tube"
                 />
                 <h1>Party YouTube</h1>
-                <Navigation/>
-                <hr/>
+                <Navigation />
+                <hr />
                 {children}
             </div>
         );
     }
 }
+
+export default App;

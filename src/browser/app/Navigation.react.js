@@ -1,11 +1,11 @@
 /**
  * Created by David Pohan <david.pohan@keyup.eu> on 3/8/2016.
  */
-import React, {PropTypes} from 'react';
+import React from 'react';
 import Component from 'react-pure-render/component';
 import {Link} from 'react-router';
 
-export default class Navigation extends Component {
+class Navigation extends Component {
     render() {
         return (
             <div>
@@ -18,3 +18,5 @@ export default class Navigation extends Component {
         );
     }
 }
+
+export default Navigation;

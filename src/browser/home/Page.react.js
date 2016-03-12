@@ -5,13 +5,15 @@ import React from 'react';
 import Component from 'react-pure-render/component';
 import Helmet from 'react-helmet';
 
-export default class Page extends Component {
+class Page extends Component {
     render() {
         return (
             <div>
-                <Helmet title="Home"/>
+                <Helmet title="Home" />
                 <h4>Yaay, hot reloading works</h4>
             </div>
         );
     }
 }
+
+export default Page;
