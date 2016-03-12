@@ -9,7 +9,7 @@ export default class Page extends Component {
         return (
             <div>
                 <Helmet title="Home"/>
-                <h4>yaay, redux</h4>
+                <h4>Yaay, hot reloading works</h4>
             </div>
         );
     }

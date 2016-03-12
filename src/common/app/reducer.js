@@ -5,8 +5,8 @@ import {combineReducers} from 'redux';
 
 import counter from './../counter/reducer';
 
-const reducers = combineReducers({
+const appReducer = combineReducers({
     counter
 });
 
-export default reducers;
+export default appReducer;

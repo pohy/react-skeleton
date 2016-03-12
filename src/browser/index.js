@@ -3,11 +3,10 @@
  */
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import configureStore from './../common/configureStore';
 
-import reducers from '../common/app/reducer';
-import {createStore} from 'redux';
 import {Provider} from 'react-redux';
-const store = createStore(reducers);
+const store = configureStore();
 
 import {Router, browserHistory, hashHistory} from 'react-router';
 import routes from '../common/app/routes';
