@@ -3,9 +3,9 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import configureStore from './../common/configureStore';
 
 import {Provider} from 'react-redux';
+import configureStore from './../common/configureStore';
 const store = configureStore();
 
 import {Router, browserHistory} from 'react-router';
